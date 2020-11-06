@@ -13,3 +13,8 @@
 <% end %>
 
 <%= link_to("See a favourite show", {:controller => 'fav', :action => 'show1'}) %>
+
+<br />
+
+<%# Below page and id are extra paramters  %>
+<%= link_to("Fav show with parameters ", {:controller => 'fav', :action => 'show2', :page => 20, :id => 5}) %>

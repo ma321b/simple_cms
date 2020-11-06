@@ -13,4 +13,12 @@ class DemoController < ApplicationController
     # redirect_to(:action => 'index') # when we require same controller, no need to write it (only write action)
     # redirect_to('https://keats.kcl.ac.uk') # redirect to this url 
   end
+
+  def about
+    render('demo/about_us')
+  end
+
+  def contact
+    render('demo/contact_us')
+  end
 end

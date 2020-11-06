@@ -7,7 +7,8 @@ class FavController < ApplicationController
   end
 
   def show2
-    render('show2') # this is a default, searches in synonymous views directory (fav) (no need to specify)
+    @page = params[:page] # make instance variable of query parameter "page"
+    # render('show2') # this is a default, searches in synonymous views directory (fav) (no need to specify)
   end
 
   def show3
