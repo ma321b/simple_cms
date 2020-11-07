@@ -1,8 +1,8 @@
 class FavController < ApplicationController
-  layout false;
+  layout false
 
   def show1
-    @array2 = [1,2,3,4,4]
+    @array2 = [1, 2, 3, 4, 4]
     render('fav/show1') # this is a default, searches in views/fav/show1 (no need to specify)
   end
 

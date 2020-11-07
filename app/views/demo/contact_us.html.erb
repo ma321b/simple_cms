@@ -1,4 +1,15 @@
 <h1>Need help? Contact us!</h1>
-<p>You can email us at me@webdev.com</p>
+<p>You can contact us: </p>
+
+<% if params['country'] == 'us' or params['country'] == 'ca' %>
+  <p>(800) 555-6789</p>
+<% elsif params['country'] == 'uk' %>
+  <p>(020) 7946 1234</p>
+<% else %>
+  <p>0900 78601</p>
+<% end %>
+
+<br />
+<br />
 
 <%= link_to('About us', {:controller => 'demo', :action => 'about'}) %>

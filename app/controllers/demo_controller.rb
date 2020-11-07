@@ -4,7 +4,7 @@ class DemoController < ApplicationController
 
   # redirect to redirect#redirect after 6 seconds
   def index
-    @array = [1,2,3,4,5]  # instance variable, can use in template
+    @array = [1, 2, 3, 4, 5] # instance variable, can use in template
   end
 
   def hello
