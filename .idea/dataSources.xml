@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="Rails simple_cms: development" uuid="f6f503ef-3f56-457f-a824-0f321a1edcac">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/simple_cms_development</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails simple_cms: test" uuid="8965fbbb-3ee9-424e-be56-b47570721e04">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/simple_cms_test</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails simple_cms: production" uuid="07993b3b-24eb-4f4a-9de7-c57b7e9ac70e">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/simple_cms_production</jdbc-url>
+    </data-source>
+  </component>
+</project>
