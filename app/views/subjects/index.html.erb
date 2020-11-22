@@ -1,0 +1,16 @@
+<!--This should display all the Subject records in the db-->
+<h1>Subjects that we have</h1>
+<table>
+  <tr>
+    <th>Position</th>
+    <th>Name</th>
+    <th>Visible</th>
+  </tr>
+<% @subjects.each do |subject| %>
+  <tr>
+    <td><%= subject.position %></td>
+    <td><%= subject.name %></td>
+    <td><%= subject.visible ? 'Yes' : 'No' %></td>
+  </tr>
+<% end %>
+</table>
