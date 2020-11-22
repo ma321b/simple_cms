@@ -1,2 +1,22 @@
-<h1>Subjects#show</h1>
-<p>Find me in app/views/subjects/show.html.erb</p>
+<!--This link at the top of the page will take back to the page-->
+<%= link_to('<< Take me bacc', subject_path) %>
+
+<h1>Details about Subject <%= @subject.id %></h1>
+<table>
+  <tr>
+    <th>Name</th>
+    <td><%= @subject.name %></td>
+  </tr>
+  <tr>
+    <th>Position</th>
+    <td><%= @subject.position %></td>
+  </tr>
+  <tr>
+    <th>Create At</th>
+    <td><%= @subject.created_at %></td>
+  </tr>
+  <tr>
+    <th>Updated at</th>
+    <td><%= @subject.updated_at %></td>
+  </tr>
+</table>

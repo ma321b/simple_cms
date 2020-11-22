@@ -1,16 +1,22 @@
 <!--This should display all the Subject records in the db-->
+<%=  %>
 <h1>Subjects that we have</h1>
 <table>
   <tr>
+    <th>ID</th>
     <th>Position</th>
     <th>Name</th>
     <th>Visible</th>
+    <th>Actions</th>
   </tr>
 <% @subjects.each do |subject| %>
   <tr>
+    <td><%= subject.id %></td>
     <td><%= subject.position %></td>
     <td><%= subject.name %></td>
     <td><%= subject.visible ? 'Yes' : 'No' %></td>
+<!--    this subject_path below is resourceful routing, sends the id of subject as param to subjects, and renders subjects/show -->
+    <td><%= link_to('Show Details', subject_path(subject)) %></td>
   </tr>
 <% end %>
 </table>
