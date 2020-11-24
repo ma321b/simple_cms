@@ -1,2 +1,30 @@
-<h1>Subjects#new</h1>
-<p>Find me in app/views/subjects/new.html.erb</p>
+<!--Add a new subject to db-->
+<%= link_to('<< Show all subjects', subjects_path) %>
+
+<h1>Please enter details of the new Subject to be added below</h1>
+
+<!--Note below the url is subjects_path (as above), but method is POST, rather than GET,-->
+<!--which here makes use of resourceful routing and creates the subject rather than displaying all-->
+<!--the subjects-->
+<%= form_for(@subject, :url => subjects_path, :method => 'post') do |f| %>
+  <table>
+    <tr>
+      <th>Name: </th>
+      <td><%= f.text_field(:name) %></td>
+    </tr>
+
+    <tr>
+      <th>Position: </th>
+      <td><%= f.text_field(:position) %></td>
+    </tr>
+
+    <tr>
+      <th>Visible: </th>
+      <td><%= f.text_field(:visible) %></td>
+    </tr>
+  </table>
+
+  <div>
+    <%= f.submit('Create Subject!') %>
+  </div>
+<% end %>
